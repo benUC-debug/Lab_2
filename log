@@ -58,3 +58,17 @@ list.c:82:23: error: assignment to ‘Node *’ from incompatible pointer type �
    82 |         newNode->prev = popCurrent;
       |                       ^
 e42633d
+Fri Mar 27 06:14:37 PM UTC 2026: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘pushCurrent’:
+list.c:82:23: error: comparison of distinct pointer types lacks a cast [-Werror=compare-distinct-pointer-types]
+   82 |         newNode->prev == popCurrent;
+      |                       ^~
+list.c:82:23: error: statement with no effect [-Werror=unused-value]
+   82 |         newNode->prev == popCurrent;
+      |         ~~~~~~~~~~~~~~^~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+60977d2
