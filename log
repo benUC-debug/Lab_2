@@ -36,3 +36,15 @@ list.c:92:9: error: ‘list_current_next’ undeclared (first use in this functi
    92 |         list_current_next = newNode;
       |         ^~~~~~~~~~~~~~~~~
 6139d9b
+Fri Mar 27 06:14:00 PM UTC 2026: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘pushCurrent’:
+list.c:82:25: error: ‘current’ undeclared (first use in this function); did you mean ‘popCurrent’?
+   82 |         newNode->prev = current;
+      |                         ^~~~~~~
+      |                         popCurrent
+list.c:82:25: note: each undeclared identifier is reported only once for each function it appears in
+15becfb
