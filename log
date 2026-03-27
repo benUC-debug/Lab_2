@@ -72,3 +72,14 @@ list.c:82:23: error: statement with no effect [-Werror=unused-value]
       |         ~~~~~~~~~~~~~~^~~~~~~~~~~~~
 cc1: all warnings being treated as errors
 60977d2
+Fri Mar 27 06:15:23 PM UTC 2026: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘pushCurrent’:
+list.c:82:23: error: statement with no effect [-Werror=unused-value]
+   82 |         newNode->prev == list->current;
+      |         ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+3746a4a
