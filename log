@@ -21,3 +21,18 @@ list.c:99:1: error: expected identifier or ‘(’ before ‘}’ token
    99 | }
       | ^
 bdd467f
+Fri Mar 27 06:13:22 PM UTC 2026: 
+ list.c | 4 ----
+ 1 file changed, 4 deletions(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘pushCurrent’:
+list.c:82:27: error: ‘current’ undeclared (first use in this function); did you mean ‘popCurrent’?
+   82 |         newNode -> prev = current;
+      |                           ^~~~~~~
+      |                           popCurrent
+list.c:82:27: note: each undeclared identifier is reported only once for each function it appears in
+list.c:92:9: error: ‘list_current_next’ undeclared (first use in this function)
+   92 |         list_current_next = newNode;
+      |         ^~~~~~~~~~~~~~~~~
+6139d9b
