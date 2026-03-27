@@ -48,3 +48,13 @@ list.c:82:25: error: ‘current’ undeclared (first use in this function); did 
       |                         popCurrent
 list.c:82:25: note: each undeclared identifier is reported only once for each function it appears in
 15becfb
+Fri Mar 27 06:14:28 PM UTC 2026: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘pushCurrent’:
+list.c:82:23: error: assignment to ‘Node *’ from incompatible pointer type ‘void * (*)(List *)’ {aka ‘void * (*)(struct List *)’} [-Wincompatible-pointer-types]
+   82 |         newNode->prev = popCurrent;
+      |                       ^
+e42633d
