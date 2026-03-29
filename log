@@ -95,3 +95,26 @@ Fri Mar 27 06:19:51 PM UTC 2026:
  tests:  1|5
 total_score: 10/60
 b962e01
+Sun Mar 29 02:59:42 AM UTC 2026: 
+ list.c | 4 ++++
+ 1 file changed, 4 insertions(+)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘createList’:
+list.c:38:18: error: initialization of ‘List *’ {aka ‘struct List *’} from incompatible pointer type ‘Node *’ [-Wincompatible-pointer-types]
+   38 |      List *new = (Node *)malloc(sizeof(List));
+      |                  ^
+list.c:39:10: error: expected identifier or ‘(’ before ‘->’ token
+   39 |      List->data = NULL;
+      |          ^~
+list.c:40:10: error: expected identifier or ‘(’ before ‘->’ token
+   40 |      List->prev = NULL;
+      |          ^~
+list.c:41:10: error: expected identifier or ‘(’ before ‘->’ token
+   41 |      List->next = NULL;
+      |          ^~
+list.c:38:12: error: unused variable ‘new’ [-Werror=unused-variable]
+   38 |      List *new = (Node *)malloc(sizeof(List));
+      |            ^~~
+cc1: all warnings being treated as errors
+1d6c0a5
