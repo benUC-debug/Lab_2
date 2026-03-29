@@ -39,7 +39,7 @@ List * createList() {
      new->current = data;
      new->head = NULL;
      new->tail = NULL;
-     return NULL;
+     return new;
 }
 
 // 2. Programe las funciones void * firstList(List * list) y void * nextList(List * list).

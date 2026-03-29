@@ -175,3 +175,14 @@ list.c:39:21: error: ‘data’ undeclared (first use in this function)
       |                     ^~~~
 list.c:39:21: note: each undeclared identifier is reported only once for each function it appears in
 b59039a
+Sun Mar 29 03:05:31 AM UTC 2026: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘createList’:
+list.c:39:21: error: ‘data’ undeclared (first use in this function)
+   39 |      new->current = data;
+      |                     ^~~~
+list.c:39:21: note: each undeclared identifier is reported only once for each function it appears in
+afac49b
