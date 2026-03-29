@@ -176,6 +176,7 @@ void * popCurrent(List * list) {
         Node *eliminar = list->current;
         free(eliminar);
     }
+    return NULL;
 }
 
 void cleanList(List * list) {
