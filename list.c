@@ -95,12 +95,15 @@ void pushFront(List * list, void * data) {
     
     primer->data = data;
     primer->next = list->head;
-    primer->prev = list->prev;
-    list->head = primer->prev;
-    if(list->head == NULL){
-        list->head = list->tail;
+    primer->prev = NULL;
+    if(list->head != NULL){
+        list->head->prev = primer;
+    }
+    else{
         list->tail = primer;
     }
+    list->head = primer;
+    
 }
 
 void pushBack(List * list, void * data) {

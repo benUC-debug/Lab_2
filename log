@@ -356,3 +356,9 @@ list.c:98:24: error: ‘List’ {aka ‘struct List’} has no member named ‘p
    98 |     primer->prev = list->prev;
       |                        ^~
 2dc2e68
+Sun Mar 29 04:01:57 AM UTC 2026: 
+ list.c | 11 +++++++----
+ 1 file changed, 7 insertions(+), 4 deletions(-)
+ tests:  11|1
+total_score: 50/60
+5d93bfc
