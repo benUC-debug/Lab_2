@@ -164,3 +164,14 @@ Sun Mar 29 03:03:23 AM UTC 2026:
  tests:  1|5
 total_score: 10/60
 82661f7
+Sun Mar 29 03:03:57 AM UTC 2026: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘createList’:
+list.c:39:21: error: ‘data’ undeclared (first use in this function)
+   39 |      new->current = data;
+      |                     ^~~~
+list.c:39:21: note: each undeclared identifier is reported only once for each function it appears in
+b59039a
