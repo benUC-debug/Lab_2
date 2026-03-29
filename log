@@ -340,3 +340,9 @@ list.c:99:22: error: ‘List’ {aka ‘struct List’} has no member named ‘p
    99 |     list->head = list->prev;
       |                      ^~
 2e92d05
+Sun Mar 29 03:53:14 AM UTC 2026: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  10|2
+total_score: 40/60
+559934d

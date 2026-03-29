@@ -96,7 +96,7 @@ void pushFront(List * list, void * data) {
     primer->data = data;
     primer->next = list->head;
     primer->prev = NULL;
-    list->head = list->prev;
+    list->head = primer->prev;
 }
 
 void pushBack(List * list, void * data) {
