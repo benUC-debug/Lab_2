@@ -138,3 +138,23 @@ list.c:38:12: error: unused variable ‘new’ [-Werror=unused-variable]
       |            ^~~
 cc1: all warnings being treated as errors
 77a7e7f
+Sun Mar 29 03:02:52 AM UTC 2026: 
+ list.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘createList’:
+list.c:39:10: error: expected identifier or ‘(’ before ‘->’ token
+   39 |      List->current = NULL;
+      |          ^~
+list.c:40:10: error: expected identifier or ‘(’ before ‘->’ token
+   40 |      List->head = NULL;
+      |          ^~
+list.c:41:10: error: expected identifier or ‘(’ before ‘->’ token
+   41 |      List->tail = NULL;
+      |          ^~
+list.c:38:12: error: unused variable ‘new’ [-Werror=unused-variable]
+   38 |      List *new = (List *)malloc(sizeof(List));
+      |            ^~~
+cc1: all warnings being treated as errors
+eb26aee
