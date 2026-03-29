@@ -379,3 +379,14 @@ list.c:179:1: error: control reaches end of non-void function [-Werror=return-ty
       | ^
 cc1: all warnings being treated as errors
 ff42dca
+Sun Mar 29 04:40:58 AM UTC 2026: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:179:1: error: control reaches end of non-void function [-Werror=return-type]
+  179 | }
+      | ^
+cc1: all warnings being treated as errors
+6e51b0c
